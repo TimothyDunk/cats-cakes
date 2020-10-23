@@ -14,6 +14,31 @@ a {
     text-decoration: none;
 }
 
+input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    opacity: 50%;
+}
+
+button:hover {
+    opacity: 100%;
+    transition: 3s;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    top: 140px;
+}
+
 .blue-background {
     background-color: #5dbcd2;
 }
@@ -57,6 +82,7 @@ a {
     #cat-baking {
         max-width: 80%;
     }
+
 }
 
 #front-page-image {
@@ -80,6 +106,7 @@ a {
 #products-content {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .products-tile {
@@ -100,6 +127,20 @@ a {
         margin-right: 20px;
     }
 }
-$company-about {
+#company-about {
     padding: 30px;
+}
+
+#contact-page {
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padding-10 {
+    padding: 10px;
 }
