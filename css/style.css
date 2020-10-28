@@ -50,6 +50,14 @@ footer {
     padding: 10px;
 }
 
+.nav-link:visited {
+    color: black;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
 @media screen and (max-width: 700px) {
     .nav-bar {
         flex-direction: column;
@@ -115,6 +123,7 @@ footer {
     flex-direction: column;
     margin: 20px;
 }
+
 
 @media screen and (min-width: 700px){
     #company-page {
