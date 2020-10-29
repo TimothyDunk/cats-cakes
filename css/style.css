@@ -152,6 +152,9 @@ footer:hover {
     margin: 20px;
 }
 
+.break {
+    flex-basis: 100%;
+}
 
 @media screen and (min-width: 700px){
     #company-page {
