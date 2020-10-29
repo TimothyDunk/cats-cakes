@@ -84,6 +84,7 @@ footer:hover {
 
 .nav-link:hover {
     color: white;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 700px) {
@@ -131,7 +132,7 @@ footer:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .product-image {
