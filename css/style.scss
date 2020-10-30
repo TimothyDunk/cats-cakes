@@ -1,0 +1,196 @@
+@mixin vertical-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3, h4, a, p {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    @include vertical-flexbox();
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+label, button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+p {
+    font-weight: 300;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    padding-bottom: 4px;
+    font-size: 20px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+}
+
+button:hover {
+    background-color: lightskyblue;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: text;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Oswald', sans-serif;
+    opacity: 50%;
+}
+
+footer:hover {
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.blue-background {
+    background-color: #5dbcd2;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-link:visited {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+    #products-content {
+        flex-direction: column;
+    }
+    #company-page {
+        align-items: center;
+        margin: 30px;
+        @include vertical-flexbox();
+    }
+    #cat-baking {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 360px){
+    .nav-bar {
+        flex-direction: column-reverse;
+    }
+    #products-content {
+        flex-direction: column;
+    }
+    #company-page {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    #cat-baking {
+        max-width: 80%;
+    }
+
+}
+
+#front-page-image {
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#front-page-content {
+    @include vertical-flexbox();
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product-image {
+    height: auto;
+    width: 200px;
+}
+
+#products-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.products-tile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 700px){
+    #company-page {
+        display: flex;
+        margin: 30px;
+    }
+
+    #cat-baking {
+        max-width: 50%;
+        margin-right: 20px;
+        flex-wrap: wrap;
+        max-height: 80%;
+    }
+}
+#company-about {
+    padding: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+#contact-page {
+    text-align: center;
+}
+
+#contact-form {
+    @include vertical-flexbox();
+    align-items: center;
+}
+
+.nav-link.current-page {
+    color: white;
+}
+
+.padding-10 {
+    padding: 10px;
+}
